@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Efeitos</title>
+  <script src="jquery/jquery-3.5.1.js"></script>
+</head>
+
+<body>
+  <p id="meuParagrafo">Olá, mundo!</p>
+  <script>
+    $(document).ready(function () {
+      $("#meuParagrafo").hover(function () {
+        $(this).css("background-color", "yellow");
+      }, function () {
+        $(this).css("background-color", "white");
+      });
+    });
+  </script>
+</body>
+
+</html>
