@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Formulário de Contato</title>
+<script>
+function validateForm() {
+let name = document.getElementById('name').value;
+let phone = document.getElementById('phone').value;
+let email = document.getElementById('email').value;
+if (name == "") {
+alert("Por favor, preencha o campo Nome.");
+}
+if (phone == "") {
+alert("Por favor, preencha o campo Telefone.");
+}
+if (email == "") {
+alert("Por favor, preencha o campo E-mail.");
+}
+}
+</script>
+</head>
+<body>
+<form>
+<label for="name">Nome:</label>
+<input type="text" id="name" name="name"><br><br>
+<label for="phone">Telefone:</label>
+<input type="tel" id="phone" name="phone"><br><br>
+<label for="email">E-mail:</label>
+<input type="email" id="email" name="email"><br><br>
+<button type="button" onclick="validateForm()">Enviar</button>
+</form>
+</body>
+</html>
